@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../static/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+
+</head>
+<body style="background: url(../../../static/images/slide_h3.jpg);background-size:cover">
+<h1 align="center">Create customer</h1>
+<p>
+    <a class="btn btn-dark text-white" style="color: #4f2216" href="http://localhost:63342/module5/casestudy/templates/views/customer/list.html">customer list</a>
+</p>
+<div class="d-block w-25  container mb-2  "
+     style="width:500px ;margin: 20px auto;padding: 20px 20px;background-color: #f8f9fa; border-radius:10px ">
+    <form action="@{/customer/create}" object="${customerDto}" method="post">
+        <div class="mb-3">
+            <label class="form-label" style="color: #4f2216">Start Day:</label>
+            <input class="form-control" aria-describedby="emailHelp" type="text"/>
+
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" style="color: #4f2216">End Day:</label>
+            <input class="form-control" aria-describedby="emailHelp" type="text"/>
+        </div>
+
+
+
+        <div class="mb-3" style="margin-bottom: 20px">
+            <label style="color: #4f2216">Employee Name:</label>
+
+            <select class="form-control" aria-describedby="emailHelp">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+
+        <div class="mb-3" style="margin-bottom: 20px">
+            <label style="color: #4f2216">Customer Name:</label>
+
+            <select class="form-control" aria-describedby="emailHelp">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+
+        <div class="mb-3" style="margin-bottom: 20px">
+            <label style="color: #4f2216">Facility Name:</label>
+
+            <select class="form-control" aria-describedby="emailHelp">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div>
+            <input  style="color: #4f2216" type="submit" class="btn-outline-warning" value="Create facility">
+        </div>
+
+    </form>
+</div>
+
+<script src="../../../static/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
