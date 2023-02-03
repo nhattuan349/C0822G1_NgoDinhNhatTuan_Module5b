@@ -1,0 +1,23 @@
+
+<div style="display: flex; height:750px;justify-content: center;align-items: center">
+
+
+  <div style="display: flex; width:300px;height: 300px; border-radius: 50%" [ngClass]="pickColor"></div>
+  <div>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-primary"
+            value="bg-primary" (mouseover)="getColor($event.target)">primary</button>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-info"
+            value="bg-info" (mouseover)="getColor($event.target)">info</button>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-warning"
+            value="bg-warning" (mouseover)="getColor($event.target)">warning</button>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-danger"
+            value="bg-danger" (mouseover)="getColor($event.target)">danger</button>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-success"
+            value="bg-success" (mouseover)="getColor($event.target)">success</button>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-dark"
+            value="bg-dark" (mouseover)="getColor($event.target)">black</button>
+    <button style="width: 100px;height: 100px; border-radius: 50%; margin: 5px" class="btn btn-white"
+            value="bg-white" (mouseover)="getColor($event.target)">white</button>
+  </div>
+
+</div>
